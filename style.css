@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    color: #EEEEEE;
+    outline: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+html, body {
+    height: 100vh;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 4.5em;
+}
+
+
+.container {
+    height: 100%;
+    padding-bottom: 5%;
+    background-color: #1D293A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    margin-left: 6%;
+    display: grid;  
+    grid-gap: 1em;
+    grid-template-columns: 4.5em 4.5em 4.5em 4.5em; 
+    grid-template-rows: 4.5em 4.5em 4.5em 4.5em 4.5em 4.5em;
+}
+
+.left-text {
+    margin-left: 5%;
+}
+
+.right-text {
+    padding-left: 5%;
+}
+
+.result {
+    grid-column: 1 / span 4;
+    background-color: #DEDEDE;
+    text-align: right;
+}
+
+.result > p {
+    color: #202020;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 3%;
+    padding-right: 5%;
+    padding-left: 2%;
+    overflow: auto;
+    
+}
+
+.result > p::-webkit-scrollbar {
+    width: 6em;
+    height: 0.2em;
+  }
+  
+.result > p::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+.result > p::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+.result > p::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+.operator {
+    background-color: #2A3748;
+    text-align: center;
+    transition: 0.1s;
+}
+
+.operator > p {
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-top: 15%;
+}
+
+.operator > img {
+    margin-top: 30%;
+}
+
+.substract > img {
+    margin-top: 45%;
+}
+
+.decimal > img {
+    margin-top: 41%;
+}
+
+.num {
+    background-color: #3A4B63;
+    text-align: center;
+}
+
+.num > p {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.equal {
+    background-color: #F15E5E;
+    text-align: center;
+}
+
+.equal > img {
+    margin-top: 38%;
+}
+
+.zero {
+    grid-column: 1 / span 2;
+}
+
+.zero > p {
+    margin-top: 7%;
+}
+
+footer {
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    background-color: #11171E;
+    bottom: 0;
+    text-align: center;
+}
+
+
+
+#github {
+    margin-top: 1.3em;
+    height: 4em;
+    width: auto;
+}
+
+.calculator div{
+    cursor: pointer;
+};
+
+/* scrollbar */
+
